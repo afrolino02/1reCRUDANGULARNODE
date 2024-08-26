@@ -1,0 +1,13 @@
+.centrar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 5rem;
+}
+input {
+  margin-bottom: 1rem;
+}
+.separar{
+  margin-left: 1rem;
+}

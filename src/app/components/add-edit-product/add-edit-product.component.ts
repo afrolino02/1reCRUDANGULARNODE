@@ -9,7 +9,7 @@ import Swal from 'sweetalert2';
 @Component({
   selector: 'app-add-edit-product',
   templateUrl: './add-edit-product.component.html',
-  styleUrl: './add-edit-product.component.css'
+  styleUrl: './add-edit-product.component.scss'
 })
 export class AddEditProductComponent {
   public loading : boolean = false;
@@ -57,7 +57,7 @@ export class AddEditProductComponent {
       })
     } else{
       this._productservice.saveProduct(Products).subscribe()
-      this.router.navigate(['/'])
+      this.router.navigate(['/products'])
     }
 
     this.loading = true

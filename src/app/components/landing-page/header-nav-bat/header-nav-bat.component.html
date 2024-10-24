@@ -1,0 +1,43 @@
+<div  class="image">
+  <div class="degradado">
+    <header>
+      <div>
+          <img class="imagen-logo" src="../../../../assets/Logo.svg" alt="aa" width="100" height="100">
+      </div>
+
+      <nav [class.open]="isMenuOpen" class="navbar" [class.open]="isMenuOpen">
+          <ul>
+            <li [routerLink]="['/products','add']" routerLinkActive="router-link-active">Contactenos</li>
+            <li [routerLink]="['/products','add']" routerLinkActive="router-link-active">Precios</li>
+          </ul>
+          <a class="boton-ingresar"> Ingresar</a>
+      </nav>
+      <!-- menu hamburguesa -->
+       <img class="menu" (click)="toggleMenu()" src="../../../../assets/burger-menu-svgrepo-com.svg" alt="" width="50" height="50">
+    </header>
+    <section class="presentacion">
+      <h1>Bienvenido a Hotel Ejecutivo JP</h1>
+      <p>Elegancia y confort en cada detalle</p>
+    </section>
+    <section class="divisor-consultor">
+      <form action="" class="consultor">
+        <div class="espacio-de-consulta">
+          <label for=""> Check-In</label>
+          <input type="date" name="" id="">
+        </div>
+        <div class="espacio-de-consulta">
+          <label for=""> Check-out</label>
+          <input type="date" name="" id="">
+        </div>
+        <div class="espacio-de-consulta">
+          <label for="">Personas</label>
+          <input type="number" name="" id="">
+        </div>
+
+        <button> Confirmar</button>
+      </form>
+
+    </section>
+  </div>
+
+</div>

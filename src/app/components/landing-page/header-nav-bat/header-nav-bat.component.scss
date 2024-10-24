@@ -1,0 +1,230 @@
+@use "../../../scss/globals/variables" as v;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+// Imagenes y globales
+
+
+.imagen-logo{
+ filter: invert(100%);
+}
+.image{
+  background-image: url("../../../../assets/imagen-hero.jpeg");
+  width: 100%;
+  height: 90vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin-bottom: 5rem;
+}
+.degradado {
+  background: rgb(2,0,36,);
+  background: linear-gradient(180deg, rgba(2,0,36,0.5) 0%, rgba(20,33,61,0.5) 35%, rgba(252,163,17, 0.5) 100%);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+.degradado > *{
+  margin-bottom: 4rem;
+}
+.degradado > *:last-child{
+  margin-bottom: 0;
+}
+li {
+  list-style: none;
+  color: v.$blanco;
+}
+
+.boton-ingresar {
+    text-align: center;/* El texto será completamente transparente */
+    background-color: v.$blanco ;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    color: #000;
+    padding: 1rem 2rem ;
+  }
+/* Pantallas grandes (escritorio) */
+@media (min-width: 1024px) {
+  .consultor {
+    width: 100%;
+    height: 100%;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: row;
+    background-color: v.$blanco;
+    border-radius: 2rem;
+    position: relative;
+    padding: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+  .menu{
+    display: none;
+  }
+  .navbar ul {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    text-align: center;
+    margin-right: 2rem;
+    justify-content: space-evenly;
+  }
+  .navbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+
+  }
+
+  .navbar ul li {
+    margin-right: 2rem;
+    font-size: 1.5rem;
+  }
+  .navbar ul li:last-child {
+    margin-right: 0;
+  }
+}
+
+/* Pantallas medianas (tablets) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+  .pantalla {
+      width: 45%;
+      margin: 10px;
+  }
+}
+
+/* Pantallas pequeñas (moviles) */
+@media (max-width: 767px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+
+  }
+  .navbar {
+    &.open {
+      display: flex;
+      align-content: center;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: stretch;
+    }
+  }
+
+  nav {
+      display: none;  // Cuando se añade la clase "open", el menú se muestra
+  }
+  .navbar ul li {
+    font-size: 1.5rem;
+    color: v.$negro;
+  }
+
+  .navbar ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background-color: v.$blanco;
+    width: 100vh;
+  }
+  .consultor {
+    width: 100%;
+    height: 100%;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    background-color: v.$blanco;
+    border-radius: 2rem;
+    position: relative;
+    padding: 1.5rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .espacio-de-consulta{
+    display: flex;
+    flex-direction: column;
+  }
+  .espacio-de-consulta{
+    margin-bottom: 0.5rem ;
+  }
+  .espacio-de-consulta input[type="number"] {
+    padding: 0 0;
+  }
+}
+.presentacion{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 100%;
+  margin-top: 2rem;
+  height: 40vh;
+}
+
+.presentacion p{
+  color: v.$blanco;
+  font-weight: 300;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.presentacion h1 {
+  color: v.$blanco;
+  font-weight: 600;
+  font-size: 4rem;
+  text-align: center;
+  margin: 0 0;
+}
+
+.divisor-consultor {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 3rem;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+
+}
+
+.consultor div label{
+  margin-right: 1rem;
+}
+.espacio-de-consulta {
+  padding-right: 1rem;
+}
+.consultor button {
+  height: auto;
+  all: unset;
+  width: auto;
+  background-color: v.$primario;
+  color: v.$blanco;
+  padding: 1rem 2rem;
+  border-radius: 1.5rem;
+}
+

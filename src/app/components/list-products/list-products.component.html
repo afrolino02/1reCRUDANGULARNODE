@@ -1,8 +1,9 @@
 <app-progress-bar *ngIf="loading"></app-progress-bar>
-<div  *ngIf="!loading" class="container">
+<app-navbar></app-navbar>
+<div *ngIf="!loading" class="container">
   <div class="title">
     <h4> {{ "Listado de producto" | uppercase }}</h4>
-    <button type="button" class="btn btn-success" [routerLink]="['/add']" routerLinkActive="router-link-active" >Agregar producto</button>
+    <button type="button" class="btn btn-success" [routerLink]="['/products','add']" routerLinkActive="router-link-active" >Agregar producto</button>
 
   </div>
 

@@ -1,0 +1,50 @@
+.main {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.inicio{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  gap: 5rem;
+  width: 70%;
+
+}
+.inicio{
+  width: 70%;
+  height: auto;
+
+}
+.descripcion{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.descripcion p{
+  font-size: 4rem;
+  text-align: left;
+}
+.galeria-uno{
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  position: relative;
+}
+.col-1 {
+  grid-column: 1 / 3;
+}
+.col-2 {
+  grid-row: 2;
+}
+.col-3{
+  grid-row: 2;
+}

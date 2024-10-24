@@ -1,7 +1,7 @@
 import { Sequelize, DataTypes } from 'sequelize';
 import db from '../db/connection'
 
-const Producto = db.define('producto', {
+const Product = db.define('product', {
   name: {
     type: DataTypes.STRING,
   },
@@ -19,4 +19,4 @@ const Producto = db.define('producto', {
   updatedAt: false
 }
 );
-export default Producto
+export default Product

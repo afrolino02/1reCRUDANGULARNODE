@@ -4,12 +4,12 @@ import { Component, OnInit } from '@angular/core';
 import { Product } from '../../interfaces/product';
 import { RouterModule } from '@angular/router';
 import { environment } from '../../../environments/environment';
-import { ToastrService, ToastrModule } from 'ngx-toastr';
+
 import Swal from 'sweetalert2';
 @Component({
   selector: 'app-list-products',
   templateUrl: './list-products.component.html',
-  styleUrl: './list-products.component.css'
+  styleUrl: './list-products.component.scss'
 })
 export class ListProductsComponent implements OnInit {
 /*   listProducts: Product[] =[

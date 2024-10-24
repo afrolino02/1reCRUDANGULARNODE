@@ -1,3 +1,4 @@
+<app-navbar></app-navbar>
 <div  class="centrar">
   <div class="card border-secondary mb-3 centrar" style="max-width: 20rem;">
     <div class="card-header center"> {{operacion}}</div>
@@ -12,7 +13,7 @@
       <span *ngIf="formProducto.get('stock')?.hasError('required') && formProducto.get('stock')?.touched">El campo stock es <strong>Requerido</strong></span>
       <input formControlName="stock" type="text" class="form-control" placeholder="Ingrese stock" >
       <button type="submit"  class="btn btn-primary separar">Aceptar</button>
-      <button type="button"  class="btn btn-secondary separar" [routerLink]="['/']">Volver</button>
+      <button type="button"  class="btn btn-secondary separar" [routerLink]="['/products']">Volver</button>
       </form>
     </div>
   </div>

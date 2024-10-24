@@ -9,6 +9,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { provideHttpClient } from '@angular/common/http';
 import { ProgressBarComponent } from './shared/progress-bar/progress-bar.component';
 import { SharedModule } from './shared/shared.module';
+import { LandingPageModule } from './components/landing-page/landing-page.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { SharedModule } from './shared/shared.module';
     AppRoutingModule,
     ComponentsModule,
     ReactiveFormsModule,
-    SharedModule
+    SharedModule,
+    LandingPageModule
 ],
   providers: [provideHttpClient()],
   bootstrap: [AppComponent]
